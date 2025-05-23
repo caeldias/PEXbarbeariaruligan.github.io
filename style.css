@@ -1,0 +1,128 @@
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.logo{
+  padding: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.navbar-marrom {
+  background-color: #3e2723; /* marrom escuro */
+}
+
+.navbar-marrom .navbar-brand,
+.navbar-marrom .nav-link {
+  color: #FFD700 !important; /* dourado */
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar-marrom .nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid #FFD700;
+}
+
+.navbar-marrom .nav-link:hover {
+  color: #fffacd !important; /* dourado claro no hover */
+  transform: translateY(-2px); /* pequeno movimento para cima */
+}
+
+/* Efeito de linha dourada deslizando abaixo do link */
+.navbar-marrom .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #FFD700;
+  transition: width 0.3s ease;
+}
+
+.navbar-marrom .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-marrom .nav-link.disabled {
+  color: #b8860b !important; /* dourado opaco para itens desativados */
+}
+
+
+
+  .carousel-inner img {
+    max-height: 650px; /* ajuste conforme quiser */
+    object-fit: cover; /* mantém o corte proporcional */
+  }
+
+  .conteudo {
+    background-color: #262525; /* exemplo: marrom escuro */
+    color: #FFD700; /* dourado */
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .conteudo h1 {
+    font-size: 3rem; /* tamanho grande em desktop */
+    margin: 0;
+  }
+
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .conteudo h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .conteudo h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+.quemsomos{
+  background-color: #3e2723; /* exemplo: marrom escuro */
+    color: #ffffff; /* dourado */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.quemsomos img{
+  padding: 15px;
+
+}
+
+.sobreocurso{
+  background-color: #262525; /* exemplo: marrom escuro */
+    color: #FFD700; /* dourado */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.sobreocurso img {
+  width: 100%;              /* ocupa toda a largura do container */
+  aspect-ratio: 3 / 4;      /* proporção 3:4 (largura:altura) */
+  object-fit: cover;        /* garante que a imagem se encaixe corretamente */
+  max-width: 250px;         /* tamanho máximo opcional */
+  padding: 10px;
+}
+
+.sobreocurso h4{
+  color: #ffffff;
+}
+
+.contato{
+  background-color: #3e2723; /* exemplo: marrom escuro */
+    color: #ffffff; /* dourado */
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contato img{
+  width: 30%;
+}
+
+
+
